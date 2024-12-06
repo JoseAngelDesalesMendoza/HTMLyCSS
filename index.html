@@ -5,65 +5,50 @@
         <meta name="description" content="Como se inicia un proyecto, configuracion index.html">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Titulo</title>
+        <title>Formulario</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <main>
-            <section>
-                <h1>Lista del supermercado</h1>
-                <article>
-                    <ol>
-                        <li>Verduras y frutas</li>
-                        <ul>
-                            <li>Manzana</li>
-                            <li>Platano</li>
-                            <li>Pina</li>
-                            <li>Acelga</li>
-                            <li>Zanahoria</li>
-                            <li>Lechuga</li>
-                            <li>Chocolate</li>
-                            <li>cebolla</li>
-                        </ul>
-                        <figure>
-                            <img src="./pics/FrutasS.jpg" alt="Una coleccion de frutas">
-                            <figcaption>Una coleccion de frutas</figcaption>
-                        </figure>
-                        <li>Carnes y lacteos</li>
-                        <ul>
-                            <li>Bistec</li>
-                            <li>Huevo</li>
-                            <li>Salchicha</li>
-                        </ul>
-                        <figure>
-                            <img src="./pics/CarneS.jpg" alt="Variedad de carnes">
-                            <figcaption>Variedad de carnes</figcaption>
-                        </figure>
-                        <li>Cereales y azucares</li>
-                        <ul>
-                            <li>Lechera</li>
-                            <li>Nuttella</li>
-                            <li>Pan</li>
-                            <li>arroz</li>
-                            <li>Torilla</li>
-                        </ul>
-                        <figure>
-                            <img src="./pics/CerealesS.jpg" alt="Un valle cubierto por cereales">
-                            <figcaption>Un valle cubierto por cereales</figcaption>
-                        </figure>
-                    </ol>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h2>Consejos sobre alimentacion</h2>
-                    <video src="./pics/Meals.mp4#t=4,6" controls preload="auto">
-                        <!-- No se anadio la etiqueta source porque no hay varios formatos,
-                         pero podria hacerse en lugar del atributo src-->
-                    </video>
-                    <!-- t=s1,s2 permite especificar un fragmento en el que se quiere hacer enfasis -->
-                </article>
-            </section>
+            <form action=""> 
+                <label for="producto">
+                    <span>Producto: </span>
+                    <input list="productos" name="producto" id="producto">
+                </label>
+                <!-- <input list="productos"> -->
+                <datalist id="productos">
+                    <option value="Hidratantes"></option>
+                    <option value="Perfume"></option>
+                    <option value="Desodorante"></option>
+                    <option value="Tratamiento p/ cabello"></option>
+                    <option value="Maquillaje"></option>
+                </datalist>
+                <label for="cantidad">
+                    <span>Cantidad: </span>
+                    <input type="number" name="cantidad" id="cantidad">
+                </label>
+                <label for="nombre">
+                    <span>Nombre: </span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+                </label>
+                <label for="direccion">
+                    <span>Direccion: </span>
+                    <input type="text" name="direccion" id="direccion" autocomplete="address">
+                </label>
+                <label for="telefono">
+                    <span>Telefono: </span>
+                    <input type="tel" name="telefono" id="telefono" autocomplete="tel">
+                </label>
+                <label for="formaPago">
+                    <span>Forma de pago: </span>
+                    <select name="formaPago" id="formaPago">
+                        <option value="Tarjeta">Tarjeta</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Oxxo">Oxxo</option>
+                    </select>
+                </label>
+                <input type="submit">
+            </form>
         </main>
     </body>
 </html>
