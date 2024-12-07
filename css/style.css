@@ -1,0 +1,49 @@
+body {
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+main {
+    width: 1000px;
+    margin-left: 300px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #2C3E50;
+}
+
+.titulo-lista {
+    font-size: 35px;
+    margin-left: 40px;
+    color: #2980B9;
+}
+
+li {
+    margin-left: 60px;
+    padding: 8px;
+}
+
+/* Fotografias */
+
+figure {
+    width: 400px;
+    padding: 20px 100px;
+}
+
+img {
+    width: 400px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Video */
+
+video {
+    width: 400px;
+    padding: 20px 180px;
+}
