@@ -5,47 +5,47 @@
         <meta name="description" content="Como se inicia un proyecto, configuracion index.html">
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario</title>
+        <title>Lista del supermercado</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <main>
             <section>
-                <h1>Lista del supermercado</h1>
                 <article>
-                    <ol>
-                        <li class="titulo-lista">Verduras y frutas</li>
-                        <ul>
-                            <li>Manzana</li>
-                            <li>Platano</li>
-                            <li>Pina</li>
-                            <li>Acelga</li>
-                            <li>Zanahoria</li>
-                            <li>Lechuga</li>
-                            <li>Chocolate</li>
-                            <li>cebolla</li>
+                    <h1>Lista del supermercado</h1>
+                    <ol class="lista">
+                        <li class="lista__titulo">Verduras y frutas</li>
+                        <ul class="lista__sublista">
+                            <li class="lista__item">Manzana</li>
+                            <li class="lista__item">Platano</li>
+                            <li class="lista__item">Pina</li>
+                            <li class="lista__item">Acelga</li>
+                            <li class="lista__item">Zanahoria</li>
+                            <li class="lista__item">Lechuga</li>
+                            <li class="lista__item">Chocolate</li>
+                            <li class="lista__item">Cebolla</li>
                         </ul>
                         <figure>
                             <img src="./pics/FrutasS.jpg" alt="Una coleccion de frutas">
                             <figcaption>Una coleccion de frutas</figcaption>
                         </figure>
-                        <li class="titulo-lista">Carnes y lacteos</li>
-                        <ul>
-                            <li>Bistec</li>
-                            <li>Huevo</li>
-                            <li>Salchicha</li>
+                        <li class="lista__titulo">Carnes y lacteos</li>
+                        <ul class="lista__sublista">
+                            <li class="lista__item">Bistec</li>
+                            <li class="lista__item">Huevo</li>
+                            <li class="lista__item">Salchicha</li>
                         </ul>
                         <figure>
                             <img src="./pics/CarneS.jpg" alt="Variedad de carnes">
                             <figcaption>Variedad de carnes</figcaption>
                         </figure>
-                        <li class="titulo-lista">Cereales y azucares</li>
-                        <ul>
-                            <li>Lechera</li>
-                            <li>Nuttella</li>
-                            <li>Pan</li>
-                            <li>arroz</li>
-                            <li>Torilla</li>
+                        <li class="lista__titulo">Cereales y azucares</li>
+                        <ul class="lista__sublista">
+                            <li class="lista__item">Lechera</li>
+                            <li class="lista__item">Nuttella</li>
+                            <li class="lista__item">Pan</li>
+                            <li class="lista__item">Arroz</li>
+                            <li class="lista__item">Tortilla</li>
                         </ul>
                         <figure>
                             <img src="./pics/CerealesS.jpg" alt="Un valle cubierto por cereales">
@@ -53,15 +53,15 @@
                         </figure>
                     </ol>
                 </article>
-            </section>
-            <section>
                 <article>
-                    <h2>Consejos sobre alimentacion</h2>
-                    <video src="./pics/Meals.mp4#t=4,6" controls preload="auto">
-                        <!-- No se anadio la etiqueta source porque no hay varios formatos,
-                         pero podria hacerse en lugar del atributo src-->
-                    </video>
-                    <!-- t=s1,s2 permite especificar un fragmento en el que se quiere hacer enfasis -->
+                    <div class="video-cont">
+                        <h2 class="video-cont__titulo">Consejos sobre alimentacion</h2>
+                        <video class="video-cont__video" src="./pics/Meals.mp4#t=4,6" controls preload="auto">
+                            <!-- No se anadio la etiqueta source porque no hay varios formatos,
+                             pero podria hacerse en lugar del atributo src-->
+                        </video>
+                        <!-- t=s1,s2 permite especificar un fragmento en el que se quiere hacer enfasis -->
+                    </div>
                 </article>
             </section>
         </main>
