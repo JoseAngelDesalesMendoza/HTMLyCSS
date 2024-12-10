@@ -26,7 +26,8 @@ Thumbs.db
 *.swp
 
 # Pictures
-#/pics
-#*.png
-#*.jpg
-#*.svg
+/pics
+*.png
+*.jpg
+*.svg
+*.mp4

@@ -3,59 +3,36 @@
     padding: 0;
     margin: 0;
 }
-
 html {
-    background-color: #ECF0F1;
-    color: #2C3E50;
+    font-size: 62.5%;
+    background-color: #1E3A8A;
+}
+.tarjeta {
+    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
+    width: 40rem;
+    height: 60rem;
+    margin: 14rem auto;
 }
-
-main {
-    width: 60%;
-    margin: 0 20%;
-}
-
-h1 {
-    font-size: 50px;
-    color: #2C3E50;
-    margin: 30px 0 20px 0;
-}   
-
-.lista {
-    padding: 0 10%;
-    width: 100%;
-}
-
-.lista__titulo {
-    font-size: 35px;
-    color: #2980B9;
-}
-
-.lista__item {
-    padding: 1px 26px;
-    list-style-type: none;
-}
-
-/* Fotografias */
-
-figure {
-    padding: 20px 20%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-figcaption {
+.tarjeta__nombre {
+    font-size: 2.4rem;
+    width: 20rem;
+    position: absolute;
+    top: -3.8rem;
+    left: 10rem;
+    background-color: #10B981;
+    color: #F59E0B;
+    border-radius: 0.6rem;
+    padding: 0.4rem;
     text-align: center;
 }
-
-/* Video */
-
-.video-cont__video {
-    width: 100%;
-    padding: 20px 26%;
-    align-self: center;
+.tarjeta__contenido {
+    background-color: #8B5CF6;
+    color: #374151;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #EF4444;
+    height: inherit;
+    padding: 1.4rem;
+    padding-top: 3rem;
 }
