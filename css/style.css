@@ -1,38 +1,91 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 html {
     font-size: 62.5%;
-    background-color: #1E3A8A;
 }
-.tarjeta {
+body {
+    color: #1E3A8A;
+    font-size: 20px;
+}
+a {
+    color: #EF4444;
+}
+header {
+    height: 20vh;
     position: relative;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
-    width: 40rem;
-    height: 60rem;
-    margin: 14rem auto;
+    background-color: #8B5CF6;
 }
-.tarjeta__nombre {
-    font-size: 2.4rem;
-    width: 20rem;
+.logo {
+    height: inherit;
+}
+.logo__img {
+    height: inherit;
+    padding: 1.2rem;
+    border-radius: 2.5rem;
+}
+.main-nav {
     position: absolute;
-    top: -3.8rem;
-    left: 10rem;
-    background-color: #10B981;
-    color: #F59E0B;
-    border-radius: 0.6rem;
-    padding: 0.4rem;
+    top: 4.8rem;
+    right: 4.8rem;
     text-align: center;
 }
-.tarjeta__contenido {
-    background-color: #8B5CF6;
-    color: #374151;
+.main-nav__item {
+    background-color: #F59E0B;
     border-radius: 0.6rem;
-    border: 0.2rem solid #EF4444;
-    height: inherit;
-    padding: 1.4rem;
-    padding-top: 3rem;
+    display: inline-block;
+    margin: 0 0.4rem;
+    padding: 1rem 1.5rem;
+}
+.aside {
+    display: inline-block;
+    width: 20rem;
+    height: 60vh;
+    overflow: hidden;
+    background-color: #10B981;
+}
+.aside__item {
+    width: 17rem;
+    height: 12rem;
+    margin: 1.8rem auto;
+    background-color: #374151;
+    border-radius: 2rem;
+}
+main {
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    display: inline-block;
+    width: calc(100vw - 20rem);
+    height: 60vh;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 2rem;
+    background-color: #F59E0B;
+    text-align: justify;
+}
+.footer {
+    position: absolute;
+    top: 80vh;
+    width: 100vw;
+    min-height: 20vh;
+    background-color: #374151;
+}
+.enterprise-information {
+    display: inline-block;
+    width: 50vw;
+    padding: 3rem;
+}
+.social-media-links {
+    display: inline-block;
+    width: 50vw;
+    vertical-align: top;
+}
+.social-media-links__titulo {
+    font-size: 3rem;
+}
+.social-media-links__link {
+    margin: 0 0 0 2rem;
 }
