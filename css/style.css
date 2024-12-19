@@ -1,85 +1,154 @@
+:root {
+    --color-negro: #000000; /* Header y Footer */
+    --color-blanco: #FFFFFF; /* Fondo principal */
+    --color-beige: #F5F5DC;
+    --color-beige-claro: #FAF3E0; /* Fondo Aside */
+    --color-beige-tostado: #F8ECD5; /* Fondo Sección Alternativa */
+    --color-cafe: #6F4E37;
+    --color-cafe-oscuro: #4E342E; /* Texto y detalles */
+    --color-dorado: #DAA520; /* Detalles como bordes */
+    --color-dorado-suave: #D4AF37; /* Divisores */
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 html {
     font-size: 62.5%;
 }
 body {
-    color: #1E3A8A;
-    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
 }
-a {
-    color: #EF4444;
-}
-header {
-    height: 15vh;
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
     width: 100vw;
-    position: relative;
-    background-color: #8B5CF6;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    border-bottom: solid var(--color-dorado) 2px;
 }
 .logo {
-    height: inherit;
+    width: 10vh;
+    height: 10vh;
+    background-color: var(--color-dorado);
+    padding: 1rem;
 }
-.logo__img {
-    height: inherit;
-    padding: 1.2rem;
-    border-radius: 2.5rem;
+.header__title {
+    margin: 0.6rem;
+    font-size: 2rem;
 }
-.main-nav {
+.menu-hamburguesa {
     position: absolute;
-    top: 4.8rem;
-    right: 4.8rem;
-    text-align: center;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 2.4rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 0.5rem;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    border-color: var(--color-dorado)
 }
-.main-nav__item {
-    background-color: #F59E0B;
-    border-radius: 0.6rem;
+.nav__item {
     display: inline-block;
-    margin: 0 0.4rem;
-    padding: 1rem 1.5rem;
+    padding: 0.4rem;
+    margin: 0.1rem;
+    background-color: var(--color-blanco);
+    border-radius: 0.4rem;
 }
-.center-cont {
-    display: flex;
-    height: 60vh;
+a {
+    transition: 0.2s;
+    color: var(--color-dorado);
+    text-decoration: none;
+}
+a:hover {
+    transition: 0.4s;
+    color: var(--color-cafe);
+    text-decoration: underline;
+}
+.nav_disabled {
+    display: none;
 }
 .aside {
-    width: 20rem;
-    overflow-y: scroll;
-    background-color: #10B981;
-}
-.aside__item {
-    flex-grow: 1;
-    width: 16rem;
-    height: 12rem;
-    margin: 2rem auto;
-    background-color: #374151;
-    border-radius: 2rem;
+    position: sticky;
+    top: 10vh;
+    width: 100vw;
+    background-color: var(--color-beige-claro);
+    color: var(--color-negro);
 }
 .main {
-    flex-basis: 80rem;
-    flex-grow: 1;
-    padding: 2rem;
-    background-color: #F59E0B;
+    width: 100vw;
+    background-color: var(--color-blanco);
+}
+.section {
+    padding: 1rem 2rem;
+    border-bottom: solid 0.2rem var(--color-dorado);
+}
+/* color a los pares */
+.section:nth-of-type(odd) {
+    background-color: var(--color-beige-tostado);
+}
+.section__title {
+    margin: 0 0 1.6rem 0;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: var(--color-dorado);
+}
+.section__subtitle {
+    margin: 0 0 1.2rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--color-dorado);
+}
+.section__content {
     text-align: justify;
+    padding: 3rem 2.6rem;
 }
-.footer {
-    position: relative;
-    min-height: 25vh;
-    background-color: #374151;
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
 }
-.enterprise-information {
-    width: 50vw;
-    padding: 4rem;
+
+@media (min-width: 600px) {
+    .aside {
+        position: sticky;
+        width: 20%;
+        max-width: 17rem;
+        height: 90vh;
+        border-right: solid 0.2rem var(--color-dorado-suave);
+    }
+    .nav__item {
+        display: block;
+        margin: 1.6rem 1rem;
+        max-width: 15rem;
+    }
+    .nav_disabled {
+        display: block;
+    }
+    .menu-hamburguesa {
+        display: none;
+    }
+    .main {
+        width: 70%;
+        flex-grow: 1;
+    }
 }
-.social-media-links {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 4rem;
-    text-align: right;
-}
-.social-media-links__titulo {
-    font-size: 3rem;
+
+@media (min-width: 1024px) {
+    .sections-cont{
+        max-width: 90rem;
+        margin: 0 auto;
+    }
 }

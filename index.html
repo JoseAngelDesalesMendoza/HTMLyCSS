@@ -8,67 +8,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista del supermercado</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)"> -->
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img class="logo__img" src="./pics/FrutasS.jpg" alt="Logo">
-        </div>
-        <nav class="main-nav">
+    <header class="header">
+        <div class="logo"></div>
+        <h1 class="header__title">Club de Ajedrez</h1>
+        <button class="menu-hamburguesa" aria-label="Abrir menú">
+            ☰
+        </button>
+    </header>
+    <aside class="aside">
+        <nav class="nav nav_disabled">
             <ul>
-                <li class="main-nav__item"><a href="#">Home</a></li>
-                <li class="main-nav__item"><a href="#">Cursos</a></li>
-                <li class="main-nav__item"><a href="#">Instructores</a></li>
-                <li class="main-nav__item"><a href="#">Blog</a></li>
+                <li class="nav__item"><a href="#">Inicio</a></li>
+                <li class="nav__item"><a href="#">Reglas</a></li>
+                <li class="nav__item"><a href="#">Fases</a></li>
+                <li class="nav__item"><a href="#">Aperturas</a></li>
+                <li class="nav__item"><a href="#">Tactica</a></li>
+                <li class="nav__item"><a href="#">Estrategia</a></li>
+                <li class="nav__item"><a href="#">Finales</a></li>
+                <li class="nav__item"><a href="#">Partidas</a></li>
+                <li class="nav__item"><a href="#">Historia</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="center-cont">
-        <aside class="aside">
-            <div class="aside__item"></div>
-            <div class="aside__item"></div>
-            <div class="aside__item"></div>
-            <div class="aside__item"></div>
-        </aside>
-        <main class="main">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi ea aliquam omnis earum, ipsum at ex
-                deserunt quibusdam fuga vitae odio esse, ad molestias, inventore repellendus fugit blanditiis laudantium?
-                Quidem ad perferendis debitis suscipit ducimus amet repellat, expedita ullam error optio qui ratione nulla
-                mollitia voluptate illum laudantium reprehenderit autem eaque a illo ipsum saepe! Modi temporibus quas
-                illum?
-                Voluptate libero non obcaecati ex, itaque cumque nobis tempore eligendi iste, hic nesciunt, optio nostrum
-                officia fuga neque ratione? Enim id at qui, pariatur nisi dolorem error nulla! Eos, optio?
-                Odit aperiam illo iusto inventore dolores fugit doloribus veniam corporis molestiae dolore natus, sequi
-                cupiditate deleniti voluptas laudantium saepe quas placeat sapiente porro nihil doloremque, sed, eaque
-                ratione. Repellendus, officiis.
-                Ipsa voluptate est nulla esse odit quod mollitia harum, quibusdam dolorem error similique, sunt quis veniam
-                velit deleniti fugiat aliquid doloremque et optio! Voluptatem ea, eligendi quas in quasi molestias.
-                Non quisquam ut rem aspernatur repudiandae nisi in, necessitatibus provident suscipit officiis! Dolores
-                totam eum adipisci ad, vitae distinctio eligendi voluptates neque laboriosam, hic sapiente earum ea omnis
-                est veritatis?
-                Nisi, ea neque omnis reiciendis tenetur nostrum mollitia quasi tempore, voluptatibus saepe illum quidem
-                culpa corporis optio earum? Id earum sed, doloribus maiores necessitatibus veniam ad quisquam in delectus
-                quia!
-                Aliquam iure tempora blanditiis sit fugit velit facere dolore, libero vero totam, explicabo praesentium
-                cumque? Maxime, omnis quia. Totam tenetur quo impedit veniam ratione nobis doloribus molestiae quod non
-                quisquam.
-            </p>
-        </main>
-    </div>
-    <footer class="footer">
-        <div class="enterprise-information">
-            Somos una compania que vende humo y nos dedicamos a lavar. (No cierto)
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eaque nobis harum quis excepturi molestiae itaque repellendus provident velit, et laborum ipsam incidunt commodi rerum atque.
+    </aside>
+    <main class="main">
+        <div class="sections-cont">
+            <section class="section">
+                <h2 class="section__title">Inicio</h2>
+                <p class="section__content">El ajedrez es un maravilloso juego distinguido por su accesibilidad y
+                    elegancia,
+                    no necesitas ser un genio para disfrutar de el, solo necesitas la actitud para aprender y
+                    maravillarte
+                    de su complejidad; complejidaad que se expresa en combinaciones, planes y variantes sumamente agudas
+                    de
+                    finales.
+                </p>
+                <p class="section__content">El ajedrez es un juego complejo en efecto, pero esto no nos intimida, todos
+                    los
+                    jugadores de ajedrez cometemos errores una y otra vez (incluso los mejores del mundo, tambien tus
+                    rivales). El ajedrez es un juego muy facil, pero imposible de dominar; asi que si tienes miedo de
+                    aprender ajedrez no lo tengas, tampoco te obsesiones con ser invencible, tan solo disfrutalo (al
+                    menos
+                    al inicio).
+                </p>
+                <p class="section__content">El ajedrez es un juego complejo en efecto, pero esto no nos intimida, todos
+                    los
+                    jugadores de ajedrez cometemos errores una y otra vez (incluso los mejores del mundo, tambien tus
+                    rivales). El ajedrez es un juego muy facil, pero imposible de dominar; asi que si tienes miedo de
+                    aprender ajedrez no lo tengas, tampoco te obsesiones con ser invencible, tan solo disfrutalo (al
+                    menos
+                    al inicio).
+                </p>
+                <h3 class="section__subtitle">Aclaracion</h3>
+                <p class="section__content">
+                    Esta pagina pretende ser una guia para las personas que son ajenas al ajedrez, que no saben como
+                    iniciar
+                    en este mundo, incluye una leve descripcion de conceptos generales, recomendaciones y enlaces a
+                    recursos.
+                    Se aclara que es una pagina web estatica y no se modifica.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Fases de una partida</h2>
+                <p class="section__content">
+                    Dentro del vocabulario ajedrecistico existe la distincion entre apertura, medio juego y final.
+                </p>
+                <h3 class="section__subtitle">Apertura</h3>
+                <p class="section__content">
+                    La apertura representa el inicio del juego, esta generalmente se memoriza y existen un numero
+                    limitado
+                    de aperturas y variantes (sucesiones de movimientos); han pasado a la historia jugadores reconocidos
+                    por
+                    generar teoria de aperturas (aperturas, lineas o variantes). No es muy recomendable su estudio por
+                    parte
+                    de principiantes pues resulta beneficioso tener habilidad tactica y entendimiento del juego pervio
+                    para
+                    comprender las aperturas.
+                </p>
+                <p class="section__content">
+                    Pero eso si, los conceptos de la apertura son muy importantes desarrollar las piezas, controlar el
+                    centro (ocupar) con peones, y enrocarse para mantener seguro al rey.
+                </p>
+                <h3 class="section__subtitle">Medio Juego</h3>
+                <p class="section__content">
+                    El medio juego es donde se desarrolla el combate, comienza tras terminar la prepracion de los
+                    advesarios
+                    o tras salir de las lineas convencionales, la seguridad del rey, la posicion de las piezas y la
+                    estructura de peones juegan el papel central, una vez uno adquiere ventaja posicional (no material
+                    demas, sino energia potencial) es momento de materializar la ventaja a traves de la tactica. En las
+                    partidas de principiantes generalmente uno obtiene ventaja por un error grave del rival, que se deja
+                    una
+                    tactica basica.
+                </p>
+                <h3 class="section__subtitle">Finales</h3>
+                <p class="section__content">
+                    Una vez se han cambiado muchas piezas y quedan pocas, el calulo de variantes largas (visualizacion
+                    de
+                    sucesiones de movimientos) es posible y se vuelve importante calcular (preveer una serie de
+                    movimientos)
+                    para obtener la mejor jugada, mediante la eliminacion de jugadas generalmente.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Reglas del Ajedrez</h2>
+                <p class="section__content">El ajedrez es un juego de estrategia entre dos jugadores. El objetivo es dar
+                    jaque mate al rey del
+                    oponente. Cada jugador tiene 16 piezas que incluyen un rey, una reina, torres, alfiles, caballos y
+                    peones.</p>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Aperturas</h2>
+                <p class="section__content">
+                    A los principiantes se les recomienda dejar el estudio de las aperturas de lado y centrarse en
+                    dominar
+                    los conceptos fundamentales: desarrollar las piezas, controlar el centro (ocupar) con peones,
+                    enrocarse.
+                    Esto mas el estudio de la tactica deben ser suficientes para alcanzar un buen nivel de ajedrez.
+                    Ademas
+                    de preparar el terreno para lo que sigue.
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Tactica</h2>
+                <p class="section__content">
+                    La tactica es una caracteristica del ajedrez. Una muy importante! Esta dicta el flujo de la partida
+                    pues
+                    permite a los jugadores ganar material, ganar tiempos (concepto muy importante), evitar planes
+                    rivales
+                    (profilaxis) o convertir la ventaja posicional (Una mejor posicion de piezas en una victoria). Si
+                    bien
+                    puede que esta descripcion mezcle os conceptos de calculo y tactica, no es menos cierto que las
+                    amenazas
+                    tacticas estan latentes en el calculo y ayudan a los jugadores a ejecutar planes, evitar errores y
+                    encontrar grandes jugadas.
+                </p>
+                <p class="section__content">
+                    Para jugadores de todos los niveles, la tactica es quiza el elemento mas importante, auque conforme
+                    subas de nivel surgiran nuevas necesidades como un determinado conocimiento de aperturas,
+                    conocimiento
+                    de algunos planes estrategicos, conocimiento de finales, entre otros. Pero la tactica es lo primero,
+                    mientras mas filo obtengas mas rapido subiras y podras practicar en partidas (te seran de utilidad)
+                    conceptos o conocimientos mas avanzados.
+                </p>
+            </section>
         </div>
-        <div class="social-media-links">
-            <p class="social-media-links__titulo">Contactanos:</p>
-            <ul>
-                <li class="social-media-links__link">Facebook<a href=""></a></li>
-                <li class="social-media-links__link">Twitter<a href=""></a></li>
-            </ul>
-        </div>
+    </main>
+    <footer>
+        <p>Creado en 2024 - Sin fines de lucro.</p>
     </footer>
 </body>
 
