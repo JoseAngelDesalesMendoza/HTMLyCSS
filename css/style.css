@@ -93,9 +93,11 @@ a:hover {
     padding: 1rem 2rem;
     border-bottom: solid 0.2rem var(--color-dorado);
 }
-/* color a los pares */
 .section:nth-of-type(odd) {
     background-color: var(--color-beige-tostado);
+}
+.section:last-child {
+    border: none;
 }
 .section__title {
     margin: 0 0 1.6rem 0;
@@ -122,6 +124,7 @@ footer {
 }
 
 @media (min-width: 600px) {
+    /* fija el aside como barra lateral, antes se encontraba como "nav-menu desplegable hamburguesa" */
     .aside {
         position: sticky;
         width: 20%;
@@ -147,6 +150,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    /* Limita el crecimiento horizontal de las secciones */
     .sections-cont{
         max-width: 90rem;
         margin: 0 auto;
